@@ -1,0 +1,188 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav {
+    width: 100%;
+    margin : 0 auto; ;
+    background: #f2F2F2;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px ;
+}
+
+#color {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #f2F2F2;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    width : 100%;
+    padding: 30px 20px 0;
+}
+
+.items-container {
+    flex-shrink: 0;
+    padding: 10px;
+    width: 300px;
+    background: #31cd9e;
+    border-radius: 3px;
+    margin: 10px;
+    cursor: move;
+    height: auto;
+    align-self: flex-start;
+}
+
+.items-container p {
+    width: 80%;
+    word-break: break-all;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-container button, li button {
+    border-radius: 5px;
+    width : 20px;
+    height : 20px;
+    border: none;
+    background: crimson;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.item {
+    padding: 15px 5px;
+    margin: 10px 0;
+    background: #ffffff;
+    box-shadow: 2px 3px 1px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.add-item-btn, .add-container-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+form {
+    display: none;
+    padding: 5px;
+    position: relative;
+}
+
+.top-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content form label {
+    display: block;
+    font-size: 18px;
+    margin : 10px 0;
+
+}
+
+.main-content form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.validation-msg {
+    display: block;
+    color: crimson;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.close-form-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/*  Add container */
+.add-new-container {
+    flex-shrink: 0;
+    padding: 10px;
+    width: 300px;
+    background: #e2e2e2;
+    border-radius: 3px;
+    margin: 10px;
+    /* cursor: pointer; */
+    align-self: flex-start;
+}
+
+.add-container-btn {
+    margin-top: 5px;
+    background-color: #fa4040;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 10px;
+    margin-top: auto;
+    
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin-left: 10px;
+}
