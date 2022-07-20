@@ -53,8 +53,6 @@ function deleteBtnListeners(btn: HTMLButtonElement){
     btn.addEventListener('click', handleContainerDeletion); // Ajout de l'évènement qui va déclencher la fonction de suppression du container
 }
 
-
-
 function addItemBtnListeners(btn : HTMLButtonElement){
     btn.addEventListener('click' , handleAddItem)
 }
@@ -325,3 +323,4 @@ function handleColorChange(e: Event){
     })
     
 } 
+
